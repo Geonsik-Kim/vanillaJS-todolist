@@ -1,0 +1,157 @@
+@charset "utf-8";
+   
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Noto Sans KR", sans-serif;
+    font-weight:400;
+    color:#333;
+    background: #ccddcb;
+}
+
+ul{
+    list-style:none;
+}
+
+button{
+    overflow:visible;
+    text-transform:none;
+    -webkit-appearance:button;
+    border:0;
+    background:0;
+    cursor:pointer;
+    font-family:"Noto Sans KR", sans-serif;
+}
+
+.blind{
+    display:inline-block;
+    position:absolute;
+    top:auto;
+    left:-10000px;
+    font-size:0;
+    line-height:0;
+    border:0;
+    overflow:hidden;
+    width:1px;
+    height:1px;
+}
+
+.todo{
+    position:relative;
+    width:440px;
+    left:50%;
+    margin-top:60px;
+    margin-left:-220px;
+}
+
+.top{
+    position:relative;;
+    text-align:center;
+    .tit{
+        margin-bottom:5px;
+        font-size:38px;
+    }
+    .txt{
+        span{
+            font-size:20px;
+            font-weight:500;
+        }
+    }
+}
+
+.write-area{
+    padding:40px 0 45px;
+    .input-box{
+        overflow:hidden;
+        float:left;
+        width:calc(100% - 41px);
+        border-radius:8px;
+        input{
+            width:100%;
+            height:36px;
+            padding:0 15px;
+            font-family:"Noto Sans KR", sans-serif;
+            border:none;
+            vertical-align:top;
+        }
+    }
+    .btn-add{
+        float:right;
+        width:36px;
+        height:36px;
+        border-radius:3px;
+    }
+    &:after{
+        content:'';
+        display:block;
+        clear:both;
+    }
+}
+
+.tab-area{
+    margin-bottom:20px;
+    border-bottom:1px dashed #9bb999;
+    li{
+        float:left;
+        button{
+            width:100px;
+            height: 38px;
+            font-size:14px;
+            line-height:38px;
+            &.acitve{                
+                color:#fff;
+                background:#9bb999;                
+                border-radius:10px 10px 0 0;
+            }
+        }
+    }
+    &:after{
+        content:'';
+        display:block;
+        clear:both;
+    }
+}
+
+.list-area{
+    li{
+        position:relative;
+        overflow:hidden;
+        padding:8px 55px 8px 15px;
+        font-size:14px;
+        background:#fff;
+        border-radius:8px;
+        &+li{
+            margin-top:14px;
+        }
+    }
+    input{
+        width:18px;
+        height:18px;
+        margin-right:5px;
+        vertical-align:middle;
+        cursor:pointer;
+    }
+    label{
+        cursor:pointer;
+    }
+    .btn-remove{
+        position:absolute;
+        top:0;
+        right:0;
+        width:36px;
+        height:100%;
+        color:#ededed;
+        border-left:1px solid #ededed;
+        transition:color 0.2s;
+        &:hover{
+            color:#333;
+        }
+    }
+}
