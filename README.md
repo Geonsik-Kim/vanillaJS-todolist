@@ -16,7 +16,7 @@ vanilla.js를 사용한 todolist입니다.
 * node-sass
 
 ## 학습
-*
+* addEventListener에 파라미터가 있는 콜백함수 등록하기 [[바로가기]](https://kim-geonsik.notion.site/addEventListener-32d265ae4a594d0ab2bdb7e0f0f330ef)
 
 ## 링크
 * [[완성 페이지 바로가기]](https://geonsik-kim.github.io/vanillaJS-todolist/)
