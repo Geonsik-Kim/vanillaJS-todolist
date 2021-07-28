@@ -105,7 +105,7 @@ button{
             height: 38px;
             font-size:14px;
             line-height:38px;
-            &.acitve{                
+            &.active{                
                 color:#fff;
                 background:#9bb999;                
                 border-radius:10px 10px 0 0;
@@ -137,6 +137,10 @@ button{
         margin-right:5px;
         vertical-align:middle;
         cursor:pointer;
+        &:checked + label{
+            color:#a9a9a9;
+            text-decoration:line-through;
+        }
     }
     label{
         cursor:pointer;

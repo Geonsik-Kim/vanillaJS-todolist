@@ -33,7 +33,7 @@ button { overflow: visible; text-transform: none; -webkit-appearance: button; bo
 
 .tab-area li button { width: 100px; height: 38px; font-size: 14px; line-height: 38px; }
 
-.tab-area li button.acitve { color: #fff; background: #9bb999; border-radius: 10px 10px 0 0; }
+.tab-area li button.active { color: #fff; background: #9bb999; border-radius: 10px 10px 0 0; }
 
 .tab-area:after { content: ''; display: block; clear: both; }
 
@@ -42,6 +42,8 @@ button { overflow: visible; text-transform: none; -webkit-appearance: button; bo
 .list-area li + li { margin-top: 14px; }
 
 .list-area input { width: 18px; height: 18px; margin-right: 5px; vertical-align: middle; cursor: pointer; }
+
+.list-area input:checked + label { color: #a9a9a9; text-decoration: line-through; }
 
 .list-area label { cursor: pointer; }
 
